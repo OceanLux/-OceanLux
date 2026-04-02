@@ -1,0 +1,138 @@
+/*Some AI in CSS used to correct errors in code*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f6f8;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: white;
+}
+
+nav h1 {
+  color: #1e3a8a;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.btn {
+  background: #2563eb;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+/* SECTION */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* GRID */
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.card {
+  background: white;
+  width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: left;
+}
+
+/* SPLIT */
+.split {
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.split img {
+  width: 500px;
+  border-radius: 12px;
+}
+
+.split-text {
+  max-width: 500px;
+}
+
+/* HERO COLOR (for other pages) */
+.hero-alt {
+  background: #ea580c;
+  color: white;
+  padding: 80px;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav {
+    padding: 20px;
+  }
+
+  .hero h2 {
+    font-size: 32px;
+  }
+
+  .split {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .split img {
+    width: 100%;
+  }
+}
+
