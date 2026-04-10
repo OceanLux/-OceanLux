@@ -1,6 +1,6 @@
 Team members:
 
-1. Roman -
+1. Roman - 101337669
 2. Kenny Kutshina - 101383837
 3. Owen -
 4. Khalid -
@@ -26,9 +26,17 @@ How to naviguate the site:
 Team contributions:
 
 1. Roman : Home Page
+- quick note, my javascript was having a lot of trouble working with the others code, I had to make a new file for it, if this is a problem please let me know (my files are stylesindex and script.js)
 2. Kenny : Activity page and Book Now page
 3. Owen : Destinations page
 4. Khalid : Dining page
 
 
 AI usage:
+
+- Roman 
+    - Fade ins on cards
+    - Help with footer
+    - Help with information on why code wasnt working with other members
+    - images breaking 
+    - problems with spacing 

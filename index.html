@@ -1,47 +1,140 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>OceanLux</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <head>
+    <title>OceanLux</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
 
-<body>
+  <body>
 
-<button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"></button>
-
-<nav>
+  <nav>
   <h1>⚓ OceanLux</h1>
   <ul id="primary-navigation" data-visible="false" class="primary-navigation">
-    <li><a href="index.html">Home</a></li>
+    <li><a class="active" href="index.html">Home</a></li>
     <li><a href="destinations.html">Destinations</a></li>
     <li><a href="activities.html">Activities</a></li>
     <li><a href="dining.html">Dining</a></li>
     <li><a href="book_now.html" class="book-nav">Book Now!</a></li>
   </ul>
-  <a class="btn">Book Now</a>
 </nav>
 
-<section class ="hero">
-  <div>
-    <h2>Sail Into Unforgettable Moments</h2>
-    <p>Luxury cruise experiences</p>
-  </div>
-</section>
+  <section class="hero">
+    <div>
+      <h2>Sail Into Unforgettable Moments</h2>
+      <p>Luxury cruise experiences</p>
+      <a href="destinations.html" class="btn hero-btn">Explore Cruises</a>
+    </div>
+  </section>
 
-<section class="section">
-  <h2>Why Choose OceanLux</h2>
-  <div class ="grid">
-    <div class ="card"><div class ="card-content">Luxury Ships</div></div>
-    <div class ="card"><div class ="card-content">Exotic Destinations</div></div>
-    <div class ="card"><div class ="card-content">All-Inclusive</div></div>
-    <div class ="card"><div class ="card-content">Premium Service</div></div>
-  </div>
-</section>
+  <section class="section">
+    <h2>Why Choose OceanLux</h2>
+    <div class="grid">
 
+      <div class="card fade-in">
+        <img src="https://loveincorporated.blob.core.windows.net/contentimages/gallery/356e759e-6522-4bef-bed9-c089507e0a70-Seabourn_Encore_PoolDeck_beautiful_cruise_ships.jpg">
+          <div class="card-content">
+            <h3>Luxury Ships</h3>
+            <p>Experience world-class comfort aboard our state-of-the-art ships.</p>
+        </div>
+      </div>
 
+      <div class="card fade-in">
+        <img src="https://media.cntraveler.com/photos/603c2f8099ab9b035e060edf/master/pass/StLucia-2021-GettyImages-166565984-2.jpg">
+          <div class="card-content">
+            <h3><a href="destinations.html">Exotic Destinations</a></h3>
+            <p>Explore breathtaking locations across the globe.</p>
+         </div>
+      </div>
 
-<button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
-<script src="js_interactivity.js"></script>
+      <div class="card fade-in">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0">
+          <div class="card-content">
+            <h3><a href="dining.html">Fine Dining</a></h3>
+            <p>Enjoy gourmet meals crafted by top chefs.</p>
+          </div>
+      </div>
 
-</body>
+      <div class="card fade-in">
+        <img src="https://www.ncl.com/sites/default/files/700x475_ncl_Hawaii_standup_paddleboard_POA.jpg">
+          <div class="card-content">
+            <h3><a href="activities.html">Premium Activities</a></h3>
+            <p>From relaxation to adventure, there’s something for everyone.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Destinations -->
+  <section class="section alt">
+      <h2>Featured Destinations</h2>
+      <div class="grid">
+        <div class="card fade-in">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+          <div class="card-content">
+            <h3>Caribbean</h3>
+            <p>Crystal clear waters and tropical paradise.</p>
+            <a href="destinations.html" class="btn">View Trips</a>
+          </div>
+      </div>
+
+      <div class="card fade-in">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+        <div class="card-content">
+          <h3>Mediterranean</h3>
+          <p>Historic coastlines and stunning culture.</p>
+          <a href="destinations.html" class="btn">View Trips</a>
+        </div>
+      </div>
+
+      <div class="card fade-in">
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
+        <div class="card-content">
+          <h3>Alaska</h3>
+          <p>Breathtaking glaciers and wildlife.</p>
+          <a href="destinations.html" class="btn">View Trips</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials of guests -->
+  <section class="section">
+    <h2>What Our Guests Say</h2>
+      <div class="grid">
+        <div class="card fade-in">
+          <div class="card-content">
+            <p>"Best vacation of my life. Everything was perfect!"</p>
+            <strong>- Sarah M.</strong>
+          </div>
+      </div>
+<!-- wanted to add fade ins for all the cards to make it look a lot more sleek-->
+ <!-- I did ask chatgpt for help with some of the fade ins on the cards-->
+      <div class="card fade-in">
+        <div class="card-content">
+          <p>"Luxury, comfort, and amazing destinations."</p>
+          <strong>- James T.</strong>
+        </div>
+      </div>
+
+      <div class="card fade-in">
+        <div class="card-content">
+          <p>"Service was top-tier. Will definitely return."</p>
+          <strong>- Emily R.</strong>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+   <!-- for the footer, I just added a simple one with some basic info and links -->
+  <section class="cta">
+      <h2>Ready to Set Sail?</h2>
+        <p>Book your dream cruise today and experience luxury like never before.</p>
+        <a href="destinations.html" class="btn">Start Your Journey</a>
+  </section>
+
+  <script src="script.js"></script>
+
+  </body>
 </html>
