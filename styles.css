@@ -167,6 +167,7 @@ nav a {
 .activities-page .split-text h2 {
   margin-bottom: 10px;
   font-size: 35px;
+  color: #163d92;
 }
 
 .activities-page .split-text p {
@@ -197,4 +198,28 @@ nav a.active {
   color: #2563eb;
   font-weight: 600;
   letter-spacing: 1px;
+}
+
+.activities-hero {
+  text-align: center;
+  padding: 150px 20px 100px;
+}
+
+.activities-hero h2 {
+  font-size: 60px;
+  color: #163d92;
+  margin-bottom: 10px;
+}
+
+.activities-hero p {
+  color: #000000;
+  font-size: 18px;
+}
+
+.activities-page .split {
+  transition: transform 0.3s ease;
+}
+
+.activities-page .split:hover {
+  transform: translateY(-5px);
 }
