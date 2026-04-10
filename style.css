@@ -1,0 +1,425 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f6f8;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: white;
+}
+
+nav h1 {
+  color: #1e3a8a;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.btn {
+  background: #2563eb;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+/* SECTION */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* GRID */
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.card {
+  background: white;
+  width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: left;
+}
+
+/* SPLIT */
+.split {
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.split img {
+  width: 500px;
+  border-radius: 12px;
+}
+
+.split-text {
+  max-width: 500px;
+}
+
+/* HERO COLOR (for other pages) */
+.hero-alt {
+  background: #ea580c;
+  color: white;
+  padding: 80px;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav {
+    padding: 20px;
+  }
+
+  .hero h2 {
+    font-size: 32px;
+  }
+
+  .split {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .split img {
+    width: 100%;
+  }
+}
+
+
+/* Activities page styles */
+
+.activities-page .section:nth-of-type(even) .split {
+  flex-direction: row-reverse;
+}
+
+.activities-page .split {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.activities-page .split-text {
+  max-width: 480px;
+  text-align: left;
+}
+
+.activities-page .split img {
+  width: 780px;
+  height: 450px;
+  object-fit: cover;
+  object-position: left;
+  transform: scale(1.09);
+}
+
+.activities-page .split-text h2 {
+  margin-bottom: 10px;
+  font-size: 35px;
+  color: #163d92;
+}
+
+.activities-page .split-text p {
+  margin-top: 0;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+nav a.active {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.activities-page .section::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #2563eb;
+  margin: 50px auto 0;
+  opacity: 0.2;
+}
+
+.tag {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #2563eb;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.activities-hero {
+  text-align: center;
+  padding: 150px 20px 100px;
+}
+
+.activities-hero h2 {
+  font-size: 60px;
+  color: #163d92;
+  margin-bottom: 10px;
+}
+
+.activities-hero p {
+  color: #000000;
+  font-size: 18px;
+}
+
+.activities-page .split {
+  transition: transform 0.3s ease;
+}
+
+.activities-page .split:hover {
+  transform: translateY(-5px);
+}
+
+
+/* Back to top button */
+
+.back-to-top {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 2000;
+
+    width: 3rem;
+    height: 3rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+
+    background-color: #2563eb;
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, background-color 0.2s;
+}
+
+.back-to-top:hover {
+    background-color: #163d92;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Scaling Back to Top for Larger Screens */
+@media (min-width: 50rem) {
+    .back-to-top {
+        bottom: 2rem;
+        right: 2rem;
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
+
+/* hamburger navbar section */
+
+.mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2000;
+    background: url('hamburger.png') no-repeat;
+    background-size: contain;
+    width: 2rem;
+    border: 0;
+    aspect-ratio: 1;
+    cursor: pointer;
+}
+
+.primary-navigation {
+    position: fixed;
+    inset: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: min(20vh, 10rem) 2rem;
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 350ms ease-out;
+}
+
+.primary-navigation[data-visible="true"] {
+    transform: translateX(0);
+    list-style: none;
+}
+
+.mobile-nav-toggle[aria-expanded="true"] {
+    background: url('hamburger_close.png') no-repeat;
+    background-size: contain;
+}
+
+/* Responsive Details for Mobile Users */
+@media (min-width: 800px) {
+    .mobile-nav-toggle {
+        display: none;
+    }
+
+    .primary-navigation {
+        position: static;
+        inset: auto;
+        transform: none;
+        flex-direction: row;
+        padding: 0;
+        background-color: transparent;
+        transition: none;
+    }
+}
+
+/* book now section */
+.book-nav {
+  background: #2563eb;
+  color: white !important;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.book-page .split {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 60px;
+}
+
+.book-page .split-text {
+  text-align: left;
+}
+
+.book-page .split-text h2 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #163d92;
+}
+
+.book-page .split-text p {
+  font-size: 18px;
+}
+
+.book-nav:hover {
+  background: #1d4ed8;
+}
+
+.book-hero {
+  text-align: center;
+  padding: 100px 20px 40px;
+}
+
+.book-hero h2 {
+  font-size: 90px;
+  margin-bottom: 20px;
+  color: #163d92;
+}
+
+.book-hero p {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 80px;
+}
+
+/* PHONE STYLE */
+.phone {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #2563eb;
+  font-weight: bold;
+}
+
+/* FAQ accordion */
+
+.faq h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 45px;
+  color: #163d92;
+  margin-bottom: 60px;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 12px 0;
+  color: #000000;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.faq-answer p {
+  margin: 10px 0;
+  color: #2563eb;
+}
+
+/* active */
+.faq-item.active .faq-answer {
+  max-height: 300px;
+}
+
+.faq-item {
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(37, 99, 235, 0.2);
+}
