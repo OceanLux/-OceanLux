@@ -322,3 +322,105 @@ nav a.active {
         transition: none;
     }
 }
+
+/* book now section */
+.book-nav {
+  background: #2563eb;
+  color: white !important;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.book-page .split {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 60px;
+}
+
+.book-page .split-text {
+  text-align: left;
+}
+
+.book-page .split-text h2 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #163d92;
+}
+
+.book-page .split-text p {
+  font-size: 18px;
+}
+
+.book-nav:hover {
+  background: #1d4ed8;
+}
+
+.book-hero {
+  text-align: center;
+  padding: 100px 20px 40px;
+}
+
+.book-hero h2 {
+  font-size: 90px;
+  margin-bottom: 20px;
+  color: #163d92;
+}
+
+.book-hero p {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 80px;
+}
+
+/* PHONE STYLE */
+.phone {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #2563eb;
+  font-weight: bold;
+}
+
+/* FAQ accordion */
+
+.faq h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 45px;
+  color: #163d92;
+  margin-bottom: 60px;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 12px 0;
+  color: #000000;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.faq-answer p {
+  margin: 10px 0;
+  color: #2563eb;
+}
+
+/* active */
+.faq-item.active .faq-answer {
+  max-height: 300px;
+}
+
+.faq-item {
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(37, 99, 235, 0.2);
+}

@@ -45,3 +45,14 @@ navLinks.forEach(link => {
         navToggle.setAttribute('aria-expanded', false);
     });
 });
+
+// FAQ accordion
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(item => {
+  const question = item.querySelector(".faq-question");
+
+  question.addEventListener("click", () => {
+    item.classList.toggle("active");
+  });
+});
