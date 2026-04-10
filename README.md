@@ -2,7 +2,7 @@ Team members:
 
 1. Roman - 101337669
 2. Kenny Kutshina - 101383837
-3. Owen -
+3. Owen - 101374821
 4. Khalid -
 
 Description of the site and who it is for:
